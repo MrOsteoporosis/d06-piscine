@@ -6,11 +6,11 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/12 13:46:14 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/13 11:25:49 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/17 11:05:02 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+int		ft_strlen(char *str)
 {
 	int length;
 
