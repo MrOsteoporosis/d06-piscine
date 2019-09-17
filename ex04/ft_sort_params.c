@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/17 12:21:19 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/17 12:53:17 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/17 12:57:54 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,40 +27,14 @@ void	ft_putstr(char *str)
 	ft_putchar('\n');
 }
 
-int		ft_strlen(char *str)
-{
-	int length;
-
-	length = 0;
-	while (str[length] != '\0')
-	{
-		length = length + 1;
-	}
-	return (length);
-}
-
-int		ft_min2strlen(char *s1, char *s2)
-{
-	int length;
-
-	length = ft_strlen(s1);
-	if (ft_strlen(s2) < length)
-	{
-		length = ft_strlen(s2);
-	}
-	return (length);
-}
-
 int		ft_strcmp(char *s1, char *s2)
 {
 	int difference;
-	int length;
 	int temp;
 
 	difference = 0;
-	length = ft_min2strlen(s1, s2);
 	temp = 0;
-	while (temp < length)
+	while (s1[temp] != '\0' && s2[temp] != '\0')
 	{
 		difference += s1[temp] - s2[temp];
 		temp++;
